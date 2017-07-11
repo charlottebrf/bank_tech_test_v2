@@ -16,7 +16,6 @@ Run the files locally:
 Run the program in a REPL to interact with classes and their methods, e.g. pry:
 
 `$ pry`
-
 ```
 require 'file_name.rb'
 new ClassName
