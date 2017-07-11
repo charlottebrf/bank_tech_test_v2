@@ -14,9 +14,13 @@ Run the files locally:
 `$ ruby file_name.rb`
 
 Run the program in a REPL to interact with classes and their methods, e.g. pry:
+
 `$ pry`
-`require 'file_name.rb'`
-`new ClassName`
+
+```
+require 'file_name.rb'
+new ClassName
+```
 
 ## Running tests
 
