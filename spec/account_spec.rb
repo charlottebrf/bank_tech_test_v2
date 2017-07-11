@@ -23,7 +23,7 @@ describe Account do
 
   describe '#make_withdrawal' do
     it "subtracts a client\'s debit from the account balance" do
-      expect(account.make_withdrawal(15, 10)).to eq 5.00
+      expect(account.make_withdrawal(15, 10)).to eq '5.00'
     end
   end
 
