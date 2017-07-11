@@ -2,14 +2,17 @@
 class Account
 
 def money_converter(quantity)
-  converted = "%.2f" % (quantity / 1.00)
-  converted.to_i
+  '%0.2f' % quantity
 end
 
 def add_deposit(balance, credit)
+  money_converter(balance += credit)
+end
+
+def make_withdrawal(balance, debit)
   balance = money_converter(balance)
-  credit = money_converter(credit)
-  balance += credit
+  debit = money_converter(debit)
+  balance -= debit
 end
 
 

@@ -51,10 +51,6 @@ I would like to make a withdrawal`
 So that I can see my account history
 I would like to print my bank statement`
 
-## Class
+## Challenges
 
-**Transactions:** understands withdrawals and deposits
-
-**Account:** understands the interpretation of Client commands
-
-**Statement:** understands the printing of bank statements
+Dealing with currency. I took the approach that the balance & the credit/debit quantities would always be given to 2 decimal places. The return of #add_balance & #make_withdrawal then reformatted the result of the addition or subtraction to give an accurate string. To better handle edge cases it would be good to have a money converter that makes sure both balance & credit/debit are always using the accurate amount. 
