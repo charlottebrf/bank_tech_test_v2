@@ -23,16 +23,16 @@ Run the program in a REPL to interact with classes and their methods, e.g. pry:
 `$ rspec`
 
 
-# Test suite
+## Test suite
 
 `Rspec`
 `Simplecov`
 
-# Test coverage
+## Test coverage
 
 `x%`
 
-# My Approach
+## My Approach
 I took a domain driven approach, or an inside/out approach whereby I defined classes according to my Users stories that I would need.
 
 ## User Stories
