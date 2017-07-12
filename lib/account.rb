@@ -1,16 +1,17 @@
 # understands the interpretation of Client commands
 class Account
+  attr_accessor :balance
 
-  def money_converter(quantity)
-    '%0.2f' % quantity
+  def initialize
+     @balance = 0
   end
 
-  def add_deposit(balance, credit)
-    money_converter(balance += credit)
+  def add_deposit(credit)
+    @balance += credit
   end
 
-  def make_withdrawal(balance, debit)
-    money_converter(balance -= debit)
+  def make_withdrawal(debit)
+    @balance -= debit
   end
 
 end
