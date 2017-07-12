@@ -6,8 +6,9 @@ class Account
      @balance = 0
   end
 
-  def add_deposit(credit)
+  def add_deposit(credit, transaction = Transaction)
     @balance += credit
+    transaction.new.stores_transaction(credit, @balance)
   end
 
   def make_withdrawal(debit)

@@ -10,6 +10,11 @@ describe Account do
       account.add_deposit(10)
       expect(account.balance).to eq 10
     end
+
+    it 'has a new transaction instance created when a deposit is added' do
+      account.add_deposit(10)
+      expect(account.add_deposit(10)).to eq ['10.00', '20.00', '12/07/2017']
+    end
   end
 
   describe '#make_withdrawal' do

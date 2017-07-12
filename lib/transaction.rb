@@ -10,7 +10,7 @@ class Transaction
   end
 
   def stores_transaction(credit_or_debit, balance)
-    [money_converter(credit_or_debit), money_converter(balance), self.date()]
+    [money_converter(credit_or_debit), money_converter(balance), date()]
   end
 
 end
