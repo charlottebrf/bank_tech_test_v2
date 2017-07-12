@@ -19,7 +19,10 @@ describe Transaction do
 
   describe '#stores_transaction' do
     it 'stores the date, credit or debit and current balance of an account' do
-      expect(transaction.stores_transaction('01/07/2017', 50.00, 75.00)).to eq ['01/07/2017', 50.00, 75.00 ]
+      transaction_double = double(:transaction)
+      allow(transaction_double).to receive(:date).and_return('01/07/2017')
+      allow(transaction_double).to receive(:stores_transaction).and_return(['50.00', '75.00','01/07/2017'])
+      expect(transaction_double.stores_transaction(50, 75)).to eq ['50.00', '75.00','01/07/2017']
     end
   end
 end
